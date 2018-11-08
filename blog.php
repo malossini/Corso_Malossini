@@ -107,7 +107,9 @@ mysqli_close($link);// finito le operazioni chiudo la connessione
              dove $result sarà la varibile in cui è stata salvata la risorsa e 0 la prima riga della risorsa
              
             */
+            //$i=0;  (ciclo)
             while($row = mysqli_fetch_assoc($result)){
+            //while($i <= 10){     (ciclo)
                 echo'<article>';
                 echo '<h2>'.$row['title'].'</h2>';
                 /*['title'] corrisponde al valore della colonna title in questa riga della risorsa*/
@@ -124,7 +126,8 @@ mysqli_close($link);// finito le operazioni chiudo la connessione
                 il parametro verrà usato in una query per individuare un record preciso
                 nella tabella posts
                 */
-               echo'</article>';     
+               echo'</article>';
+               //$i=$i+1;  (ciclo)
             }
 
             ?>

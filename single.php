@@ -63,7 +63,7 @@ echo'</pre>';
     <body>
         
         <?php
-        if($_COOKIE['LOGIN']){
+        if(isset($_COOKIE['LOGIN'])){
                     // stampo il bottone bottone di logout
                     echo"<p>Benvenuto ".$_COOKIE['LOGIN']."</p>";
                     echo'<a href="login.php?logout=yes">Logout</a>';
